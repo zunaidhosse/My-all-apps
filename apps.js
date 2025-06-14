@@ -84,7 +84,7 @@ const apps = [
   },
   {
     name: "Zunaid Laundry",
-    url: "https://zunaidhosse.github.io/ZUNAID-S-DINE/",
+    url: "https://zunaidhosse.github.io/zunaid_laundry/",
     icon: "🧼👕"
   },
   { // নতুন অ্যাপটি এখানে সঠিকভাবে যোগ করা হয়েছে
