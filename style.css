@@ -17,6 +17,33 @@ h1 {
   text-shadow: 0 0 10px #00fff7;
 }
 
+/* ইনস্টল বাটনের জন্য নতুন স্টাইল */
+.install-button {
+  background-color: #00fff7;
+  color: #0f2027;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00fff7;
+  display: inline-block; /* To make it sit nicely */
+}
+
+.install-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00fff7;
+}
+
+/* বাটন লুকানোর জন্য ক্লাস */
+.hidden {
+  display: none;
+}
+
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -51,3 +78,4 @@ h1 {
   font-size: 16px;
   color: #ffffff;
 }
+
