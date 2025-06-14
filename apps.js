@@ -21,7 +21,7 @@ const apps = [
   },
   {
     name: "Bkash-Nagad-TT-Profit",
-    url: "https://zunaidhosse.github.io/Bkash-Nagad-number-entry/",
+    url: "https://zunaidhosse.github.io/Bkash-Nagad-TT-Profit/",
     icon: "📟"
   },
   {
