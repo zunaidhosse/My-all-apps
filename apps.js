@@ -76,6 +76,12 @@ const apps = [
     icon: "🍽️"
   }
 ];
+{
+    name: "Wifi-Calculator",
+    url: "https://zunaidhosse.github.io/Wifi-Calculator/",
+    icon: "🧮"
+  }
+];
 
 const grid = document.getElementById("appGrid");
 
