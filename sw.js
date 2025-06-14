@@ -1,12 +1,14 @@
-const CACHE_NAME = 'my-apps-cache-v1';
+const CACHE_NAME = 'my-apps-cache-v2'; // Cache version updated
+const GITHUB_REPO_NAME = '/My-all-apps'; // Your repository name
+
 const urlsToCache = [
-  '/',
-  'index.html',
-  'style.css',
-  'apps.js',
-  'manifest.json',
-  'images/icon-192x192.png',
-  'images/icon-512x512.png'
+  `${GITHUB_REPO_NAME}/`,
+  `${GITHUB_REPO_NAME}/index.html`,
+  `${GITHUB_REPO_NAME}/style.css`,
+  `${GITHUB_REPO_NAME}/apps.js`,
+  `${GITHUB_REPO_NAME}/manifest.json`,
+  `${GITHUB_REPO_NAME}/icon-192x192.png`,
+  `${GITHUB_REPO_NAME}/icon-512x512.png`
 ];
 
 // Install a service worker
@@ -14,8 +16,11 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log('Opened cache');
+        console.log('Opened cache and caching files');
         return cache.addAll(urlsToCache);
+      })
+      .catch(error => {
+        console.error('Failed to cache urls:', error);
       })
   );
 });
@@ -42,6 +47,7 @@ self.addEventListener('activate', event => {
       return Promise.all(
         cacheNames.map(cacheName => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
+            console.log('Deleting old cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
@@ -49,3 +55,4 @@ self.addEventListener('activate', event => {
     })
   );
 });
+
