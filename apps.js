@@ -1,3 +1,39 @@
+let deferredPrompt;
+const installButton = document.getElementById('installButton');
+
+// ব্রাউজার যখন বুঝবে অ্যাপটি ইনস্টল করা যাবে, তখন এই ইভেন্টটি ফায়ার হবে
+window.addEventListener('beforeinstallprompt', (e) => {
+  // ডিফল্ট ইনস্টল ব্যানারটি দেখানো থেকে বিরত রাখা
+  e.preventDefault();
+  // ইভেন্টটি পরে ব্যবহার করার জন্য সেভ করে রাখা
+  deferredPrompt = e;
+  // আমাদের বানানো ইনস্টল বাটনটি দেখানো
+  installButton.classList.remove('hidden');
+  console.log('`beforeinstallprompt` event was fired.');
+});
+
+// আমাদের ইনস্টল বাটনে ক্লিক করলে যা হবে
+installButton.addEventListener('click', async () => {
+  // ইনস্টল বাটনটি আবার লুকিয়ে ফেলা
+  installButton.classList.add('hidden');
+  // সেভ করে রাখা প্রম্পটটি দেখানো
+  deferredPrompt.prompt();
+  // ব্যবহারকারী কী করলেন তা দেখার জন্য অপেক্ষা করা
+  const { outcome } = await deferredPrompt.userChoice;
+  console.log(`User response to the install prompt: ${outcome}`);
+  // প্রম্পটটি আর ব্যবহার করা যাবে না, তাই এটিকে মুছে ফেলা
+  deferredPrompt = null;
+});
+
+// অ্যাপটি সফলভাবে ইনস্টল হয়ে গেলে এই ইভেন্টটি ফায়ার হবে
+window.addEventListener('appinstalled', (evt) => {
+  console.log('App was successfully installed.');
+  // ইনস্টল হয়ে গেলে বাটনটি লুকিয়ে রাখা যায় (যদি দেখা যায়)
+  installButton.classList.add('hidden');
+});
+
+
+// আপনার পুরনো কোড নিচে অপরিবর্তিত থাকবে
 const apps = [
   {
     name: "Car Wash App Admin",
@@ -53,3 +89,4 @@ apps.forEach(app => {
   `;
   grid.appendChild(card);
 });
+
