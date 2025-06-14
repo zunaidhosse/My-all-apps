@@ -8,32 +8,39 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // ইভেন্টটি পরে ব্যবহার করার জন্য সেভ করে রাখা
   deferredPrompt = e;
   // আমাদের বানানো ইনস্টল বাটনটি দেখানো
-  installButton.classList.remove('hidden');
+  if(installButton) {
+    installButton.classList.remove('hidden');
+  }
   console.log('`beforeinstallprompt` event was fired.');
 });
 
 // আমাদের ইনস্টল বাটনে ক্লিক করলে যা হবে
-installButton.addEventListener('click', async () => {
-  // ইনস্টল বাটনটি আবার লুকিয়ে ফেলা
-  installButton.classList.add('hidden');
-  // সেভ করে রাখা প্রম্পটটি দেখানো
-  deferredPrompt.prompt();
-  // ব্যবহারকারী কী করলেন তা দেখার জন্য অপেক্ষা করা
-  const { outcome } = await deferredPrompt.userChoice;
-  console.log(`User response to the install prompt: ${outcome}`);
-  // প্রম্পটটি আর ব্যবহার করা যাবে না, তাই এটিকে মুছে ফেলা
-  deferredPrompt = null;
-});
+if(installButton) {
+    installButton.addEventListener('click', async () => {
+        // ইনস্টল বাটনটি আবার লুকিয়ে ফেলা
+        installButton.classList.add('hidden');
+        // সেভ করে রাখা প্রম্পটটি দেখানো
+        deferredPrompt.prompt();
+        // ব্যবহারকারী কী করলেন তা দেখার জন্য অপেক্ষা করা
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to the install prompt: ${outcome}`);
+        // প্রম্পটটি আর ব্যবহার করা যাবে না, তাই এটিকে মুছে ফেলা
+        deferredPrompt = null;
+    });
+}
+
 
 // অ্যাপটি সফলভাবে ইনস্টল হয়ে গেলে এই ইভেন্টটি ফায়ার হবে
 window.addEventListener('appinstalled', (evt) => {
   console.log('App was successfully installed.');
   // ইনস্টল হয়ে গেলে বাটনটি লুকিয়ে রাখা যায় (যদি দেখা যায়)
-  installButton.classList.add('hidden');
+  if(installButton) {
+    installButton.classList.add('hidden');
+  }
 });
 
 
-// আপনার পুরনো কোড নিচে অপরিবর্তিত থাকবে
+// অ্যাপের তালিকা
 const apps = [
   {
     name: "Car Wash App Admin",
@@ -74,26 +81,27 @@ const apps = [
     name: "ZUNAID’S DINE",
     url: "https://zunaidhosse.github.io/ZUNAID-S-DINE/",
     icon: "🍽️"
-  }
-];
-
-  {
+  },
+  { // নতুন অ্যাপটি এখানে সঠিকভাবে যোগ করা হয়েছে
     name: "Wifi Calculator",
     url: "https://zunaidhosse.github.io/Wifi-Calculator/",
-    icon: "📟"
+    icon: "📶" // আইকন পরিবর্তন করা হয়েছে
   }
 ];
 
 const grid = document.getElementById("appGrid");
 
-apps.forEach(app => {
-  const card = document.createElement("div");
-  card.className = "app-card";
-  card.onclick = () => window.open(app.url, "_blank");
-  card.innerHTML = `
-    <div class="icon">${app.icon}</div>
-    <p>${app.name}</p>
-  `;
-  grid.appendChild(card);
-});
+if (grid) {
+    apps.forEach(app => {
+        const card = document.createElement("div");
+        card.className = "app-card";
+        card.onclick = () => window.open(app.url, "_blank");
+        card.innerHTML = `
+            <div class="icon">${app.icon}</div>
+            <p>${app.name}</p>
+        `;
+        grid.appendChild(card);
+    });
+}
 
+এই পরিবর্তনটি করলেই আপনার নতুন অ্যাপটি তালিকায় যুক্ত হয়ে যাবে এবং ওয়েবসাইটটি সঠিকভাবে কাজ করবে।
