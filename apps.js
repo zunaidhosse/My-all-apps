@@ -79,7 +79,7 @@ const apps = [
 {
     name: "Wifi-Calculator",
     url: "https://zunaidhosse.github.io/Wifi-Calculator/",
-    icon: "🧮"
+    icon: "📟"
   }
 ];
 
