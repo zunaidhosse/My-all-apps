@@ -7,10 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#2c5364">
+  <link rel="apple-touch-icon" href="icon-192x192.png">
 </head>
 <body>
   <div class="container">
     <h1>📱 আমার অ্যাপস</h1>
+    <!-- নতুন ইনস্টল বাটন যোগ করা হয়েছে -->
+    <button id="installButton" class="install-button hidden">অ্যাপটি ইনস্টল করুন</button>
     <div class="grid" id="appGrid"></div>
   </div>
   <script src="apps.js"></script>
@@ -18,7 +21,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('sw.js')
           .then(registration => {
             console.log('Service Worker registered with scope:', registration.scope);
           })
@@ -30,3 +33,4 @@
   </script>
 </body>
 </html>
+
