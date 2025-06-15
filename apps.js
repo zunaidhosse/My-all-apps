@@ -73,9 +73,9 @@ const apps = [
     icon: "🏧"
   },
   {
-    name: "unaid Notes",
+    name: "zunaid Notes",
     url: "https://zunaidhosse.github.io/Zunaid-Notes/",
-    icon: "🔍"
+    icon: "📝"
   },
   {
     name: "Number টাকাঃ Scanner",
