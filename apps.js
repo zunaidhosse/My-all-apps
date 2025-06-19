@@ -88,6 +88,11 @@ const apps = [
     icon: "🍽️"
   },
   {
+    name: "gmail verification/",
+    url: "https://zunaidhosse.github.io/Duplicate-gmail-verification/",
+    icon: "✉️📧"
+  },
+  {
     name: "Zunaid Laundry",
     url: "https://zunaidhosse.github.io/zunaid_laundry/",
     icon: "🧼👕"
