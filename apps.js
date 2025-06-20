@@ -93,6 +93,11 @@ const apps = [
     icon: "✉️📧"
   },
   {
+    name: "QR Code Ge & Sc",
+    url: "https://zunaidhosse.github.io/QR-Code-Generator-Scanner/",
+    icon: "🧑‍💻"
+  },
+  {
     name: "Zunaid Laundry",
     url: "https://zunaidhosse.github.io/zunaid_laundry/",
     icon: "🧼👕"
