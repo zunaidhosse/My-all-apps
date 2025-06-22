@@ -98,6 +98,11 @@ const apps = [
     icon: "🧑‍💻"
   },
   {
+    name: "Smart calculatory",
+    url: "https://zunaidhosse.github.io/Smart-calculator/",
+    icon: "🧮🗓️🧮"
+  },
+  {
     name: "Zunaid Laundry",
     url: "https://zunaidhosse.github.io/zunaid_laundry/",
     icon: "🧼👕"
