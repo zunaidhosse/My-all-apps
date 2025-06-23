@@ -78,6 +78,11 @@ const apps = [
     icon: "📝"
   },
   {
+    name: "Amar Bangla Type",
+    url: "https://zunaidhosse.github.io/Amar-Bangla-Type/",
+    icon: "👄"
+  },
+  {
     name: "Number টাকাঃ Scanner",
     url: "https://zunaidhosse.github.io/Number-Tk-scanner/",
     icon: "🔍"
