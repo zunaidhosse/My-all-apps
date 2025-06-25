@@ -79,7 +79,7 @@ const apps = [
   },
   {
     name: "Amar Bangla Type",
-    url: "https://zunaidhosse.github.io/Amar-Bangla-Type/",
+    url: "https://zunaidhosse.github.io/AmarBangla/",
     icon: "⌨️✍️"
   },
   {
