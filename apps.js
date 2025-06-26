@@ -100,7 +100,7 @@ const apps = [
   {
     name: "Cod file create",
     url: "https://zunaidhosse.github.io/Cod-file-create/",
-    icon: "</>📄🌐"
+    icon: "\<\>📄🌐"
   },
   {
     name: "QR Code Ge & Sc",
