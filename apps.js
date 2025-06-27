@@ -83,6 +83,11 @@ const apps = [
     icon: "⌨️✍️"
   },
   {
+    name: "My husband",
+    url: "https://zunaidhosse.github.io/MY_HABITS/",
+    icon: "🧘🏻‍♀️🧘🏻‍♂️"
+  },
+  {
     name: "Number টাকাঃ Scanner",
     url: "https://zunaidhosse.github.io/Number-Tk-scanner/",
     icon: "🔍"
