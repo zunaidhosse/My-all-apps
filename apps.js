@@ -78,6 +78,11 @@ const apps = [
     icon: "📝"
   },
   {
+    name: "Al Quran Lite",
+    url: "https://zunaidhosse.github.io/Al-Quran-Lite/",
+    icon: "📚📖"
+  },
+  {
     name: "Amar Bangla Type",
     url: "https://zunaidhosse.github.io/AmarBangla/",
     icon: "⌨️✍️"
