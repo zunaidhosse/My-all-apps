@@ -83,6 +83,11 @@ const apps = [
     icon: "📚📖"
   },
   {
+    name: "bodivio",
+    url: "https://zunaidhosse.github.io/bodivio/",
+    icon: "🧘🏋️"
+  },
+  {
     name: "Amar Bangla Type",
     url: "https://zunaidhosse.github.io/AmarBangla/",
     icon: "⌨️✍️"
