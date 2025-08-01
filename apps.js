@@ -58,6 +58,11 @@ const apps = [
     icon: "📝"
   },
   {
+    name: "Bikash all TK Entry",
+    url: "https://zunaidhosse.github.io/Bikash-all-TK-Entry/",
+    icon: "📝📝🧾🧾📖"
+  },
+  {
     name: "Bkash/Nagad Entry",
     url: "https://zunaidhosse.github.io/Bkash-Nagad-number-entry/",
     icon: "📲"
