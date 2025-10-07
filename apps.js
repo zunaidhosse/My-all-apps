@@ -133,6 +133,11 @@ const apps = [
     icon: "🧮📟🧮"
   },
   {
+    name: "Currency Converter",
+    url: "https://zunaidhosse.github.io/Currency-Converter/",
+    icon: "💵💳🧾"
+  },
+  {
     name: "Zunaid Laundry",
     url: "https://zunaidhosse.github.io/zunaid_laundry/",
     icon: "🧼👕"
