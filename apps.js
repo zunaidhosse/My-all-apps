@@ -142,6 +142,11 @@ const apps = [
     url: "https://zunaidhosse.github.io/zunaid_laundry/",
     icon: "🧼👕"
   },
+  {
+    name: "Car Wash App User",
+    url: "https://zunaidhosse.github.io/Room-Bazar-Khawa-Hisab/",
+    icon: "🍴"
+  },
   { // নতুন অ্যাপটি এখানে সঠিকভাবে যোগ করা হয়েছে
     name: "Wifi Calculator",
     url: "https://zunaidhosse.github.io/Wifi-Calculator/",
