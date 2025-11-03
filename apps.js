@@ -143,7 +143,12 @@ const apps = [
     icon: "🧼👕"
   },
   {
-    name: "Car Wash App User",
+    name: "shop_hisab_offline",
+    url: "https://zunaidhosse.github.io/shop_hisab_offline/",
+    icon: "🍴"
+  },
+  {
+    name: "Room-Bazar-Khawa-Hisab",
     url: "https://zunaidhosse.github.io/Room-Bazar-Khawa-Hisab/",
     icon: "🍴"
   },
