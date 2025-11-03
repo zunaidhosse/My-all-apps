@@ -145,7 +145,7 @@ const apps = [
   {
     name: "shop_hisab_offline",
     url: "https://zunaidhosse.github.io/shop_hisab_offline/",
-    icon: "🍴"
+    icon: "🏦 🛒"
   },
   {
     name: "Room-Bazar-Khawa-Hisab",
