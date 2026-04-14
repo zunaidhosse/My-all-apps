@@ -152,6 +152,11 @@ const apps = [
     url: "https://zunaidhosse.github.io/Room-Bazar-Khawa-Hisab/",
     icon: "🍴"
   },
+  {
+    name: "Love code",
+    url: "https://zunaidhosse.github.io/Love-code/",
+    icon: "💝💗💓💝"
+  },
   { // নতুন অ্যাপটি এখানে সঠিকভাবে যোগ করা হয়েছে
     name: "Wifi Calculator",
     url: "https://zunaidhosse.github.io/Wifi-Calculator/",
