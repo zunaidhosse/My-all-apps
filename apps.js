@@ -159,7 +159,7 @@ const apps = [
   },
   { // নতুন অ্যাপটি এখানে সঠিকভাবে যোগ করা হয়েছে
     name: "Wifi Calculator",
-    url: "https://zunaidhosse.github.io/Wifi-Calculator/",
+    url: "https://wifi-calculator.vercel.app/",
     icon: "📶" // আইকন পরিবর্তন করা হয়েছে
   }
 ];
