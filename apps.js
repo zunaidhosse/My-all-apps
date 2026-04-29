@@ -157,6 +157,16 @@ const apps = [
     url: "https://zunaidhosse.github.io/Love-code/",
     icon: "💝💗💓💝"
   },
+  {
+    name: "Love code",
+    url: "https://zunaidhosse.github.io/Love-code/",
+    icon: "💝💗💓💝"
+  },
+  {
+    name: "Invoic",
+    url: "https://zunaidhosse.github.io/Zunaid-Invoice/",
+    icon: "🧾🖥️🧾"
+  },
   { // নতুন অ্যাপটি এখানে সঠিকভাবে যোগ করা হয়েছে
     name: "Wifi Calculator",
     url: "https://wifi-calculator.vercel.app/",
