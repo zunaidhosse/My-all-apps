@@ -158,9 +158,9 @@ const apps = [
     icon: "💝💗💓💝"
   },
   {
-    name: "Love code",
-    url: "https://zunaidhosse.github.io/Love-code/",
-    icon: "💝💗💓💝"
+    name: "print",
+    url: "https://print-grid-pro.vercel.app/",
+    icon: "🖨️📄🖨️"
   },
   {
     name: "Invoic",
