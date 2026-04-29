@@ -167,6 +167,11 @@ const apps = [
     url: "https://zunaidhosse.github.io/Zunaid-Invoice/",
     icon: "🧾🖥️🧾"
   },
+  {
+    name: "microsoft-office",
+    url: "https://microsoft-office-mastery.vercel.app/",
+    icon: "📇⌨️🖥️"
+  },
   { // নতুন অ্যাপটি এখানে সঠিকভাবে যোগ করা হয়েছে
     name: "Wifi Calculator",
     url: "https://wifi-calculator.vercel.app/",
