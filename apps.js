@@ -48,6 +48,11 @@ const apps = [
     icon: "📠"
   },
   {
+    name: "somity-manager",
+    url: "https://somity-manager.vercel.app/",
+    icon: "👨‍💼🖥️🗄️"
+  },
+  {
     name: "Car Wash App User",
     url: "https://zunaidhosse.github.io/carwash-app/user/",
     icon: "🚗"
