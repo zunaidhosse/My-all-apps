@@ -158,13 +158,18 @@ const apps = [
     icon: "🍴"
   },
   {
+    name: "MyHisab",
+    url: "https://microsoft-office-mastery.vercel.app/",
+    icon: "📋🖊️📇"
+  },
+  {
     name: "Love code",
     url: "https://zunaidhosse.github.io/Love-code/",
     icon: "💝💗💓💝"
   },
   {
     name: "print",
-    url: "https://print-grid-pro.vercel.app/",
+    url: "https://zunaidhosse.github.io/MyHisab/",
     icon: "🖨️📄🖨️"
   },
   {
